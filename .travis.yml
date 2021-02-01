@@ -15,7 +15,7 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r yongyeol-springboot-webservice *
+  - zip -r yongyeol-springboot-webservice.zip ./*
   - mkdir -p deploy
   - mv yongyeol-springboot-webservice.zip deploy/yongyeol-springboot-webservice.zip
 
